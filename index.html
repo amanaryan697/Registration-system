@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="first">
+        <nav>
+            <ul>
+                <li><a href="#first">Home</a></li>
+                <li><a href="#second">Data</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h2>Student Details</h2>
+            <form action="#" method="POST" id="studentForm">
+                <div class="form-group">
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" name="studentName"   required >
+                </div>
+                <div class="form-group">
+                    <label for="studentID">Student ID:</label>
+                    <input type="number" id="studentID" name="studentID" min="1" step="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactNo">Contact No.:</label>
+                    <input type="tel" id="contactNo" name="contactNo" required>
+                </div>
+                <button type="submit" id="addi">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="second" class ="sec">
+            <table id ="tro" class="trg">
+                <tr class="first">
+                    <th>name</th>
+                    <th>id</th>
+                    <th>emailid</th>
+                    <th>contactNo</th>
+                </tr>    
+            </table>
+        
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
